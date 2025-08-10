@@ -1,328 +1,812 @@
+
 <!DOCTYPE html>
-<html lang="hu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="ISAAC CREATIVE STUDIO - Lendületes weboldalak, villámgyors kivitelezéssel">
-        <meta name="description" content="Modern, látványos és profi weboldalak – akár 24 órán belül. Egyedi webfejlesztés gyors kivitelezéssel és magas konverzióval.">
-        <title>
-            ISAAC CREATIVE STUDIO - Lendületes modern weboldalak, villámgyors
-            kivitelezéssel
-        </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com/">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-        <link href="./ISAAC CREATIVE STUDIO - Lendületes modern weboldalak, villámgyors kivitelezéssel_files/css2" rel="stylesheet">
-        <link rel="stylesheet" href="./ISAAC CREATIVE STUDIO - Lendületes modern weboldalak, villámgyors kivitelezéssel_files/style.css">
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "ISAAC CREATIVE STUDIO",
-                "url": "https://isaaccreativestudio.com",
-                "logo": "https://isaaccreativestudio.com/logo.png",
-                "description": "Modern webfejlesztés gyors kivitelezéssel",
-                "foundingDate": "2024",
-                "founder": {
-                    "@type": "Person",
-                    "name": "Izsák",
-                    "jobTitle": "Webfejlesztő"
-                },
-                "serviceType": "Webfejlesztés",
-                "areaServed": "Magyarország"
-            }
-        </script>
+<html lang="hu">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="ISAAC CREATIVE STUDIO - Lendületes weboldalak, villámgyors kivitelezéssel">
+    <meta name="description" content="Modern, látványos és profi weboldalak – akár 24 órán belül. Egyedi webfejlesztés gyors kivitelezéssel és magas konverzióval.">
+    <title>
+        ISAAC CREATIVE STUDIO - Lendületes modern weboldalak, villámgyors
+        kivitelezéssel
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-    .btn {
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .ripple {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.3);
-        transform: scale(0);
-        animation: ripple-animation 0.6s linear;
-        pointer-events: none;
-    }
-    
-    @keyframes ripple-animation {
-        to {
-            transform: scale(4);
-            opacity: 0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    }
-</style></head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <img src="./ISAAC CREATIVE STUDIO - Lendületes modern weboldalak, villámgyors kivitelezéssel_files/isaac-logo-transparent.png" alt="ISAAC CREATIVE STUDIO" class="logo-image">
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="https://www.isaaccreative.hu/#hero">Főoldal</a></li>
-                    <li><a href="https://www.isaaccreative.hu/#about">Rólam</a></li>
-                    <li><a href="https://www.isaaccreative.hu/#services">Szolgáltatások</a></li>
-                    <li><a href="https://www.isaaccreative.hu/#portfolio">Referenciák</a></li>
-                    <li><a href="https://www.isaaccreative.hu/#contact">Kapcsolat</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
 
-        <!-- Hero Section -->
-        <section id="hero" class="hero section-animate visible">
-            <div class="hero-content">
-                <div class="logo-container">
-                    <h1 class="logo-text">ISAAC CREATIVE STUDIO</h1>
-                </div>
-                <h2 class="hero-title">
-                    Lendületes weboldalak, villámgyors kivitelezéssel.
-                </h2>
-                <p class="hero-subtitle">
-                    Modern, látványos és profi weboldalak – akár 24 órán belül.
-                    Neked, rólad, neked készítve.
-                </p>
-                <div class="hero-buttons">
-                    <a href="https://www.isaaccreative.hu/#contact" class="btn btn-primary">Kérek Express Weboldalt (24 óra alatt)</a>
-                    <a href="https://www.isaaccreative.hu/#portfolio" class="btn btn-secondary">Megnézem a Referenciákat</a>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </div>
-        </section>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #0a0a0a;
+        }
 
-        <!-- About Section -->
-        <section id="about" class="about section-animate">
-            <div class="container">
-                <h2 class="section-title">
-                    Egy fiatal fejlesztő, aki ért a lendülethez.
-                </h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            Sziasztok! Izsák vagyok – fiatal, kreatív és
-                            megoldáscentrikus diák aki weblapkészítést vállal jó
-                            árakon.
-                        </p>
-                        <p>
-                            Olyan egyedi weboldalakat készítek, amelyek nemcsak
-                            jól néznek ki, hanem működnek is: gyorsan
-                            betöltenek, jól konvertálnak, és a Google is szereti
-                            őket.
-                        </p>
-                        <p>
-                            Hiszem, hogy egy jó weboldal nem sablonos. Ezért
-                            minden projektem személyre szabott:
-                        </p>
-                        <div class="values">
-                            <div class="value-item">
-                                <span class="value-icon">🎯</span>
-                                <span>célra törő</span>
-                            </div>
-                            <div class="value-item">
-                                <span class="value-icon">⚡️</span>
-                                <span>gyors</span>
-                            </div>
-                            <div class="value-item">
-                                <span class="value-icon">📈</span>
-                                <span>üzletileg eredményes</span>
-                            </div>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo .logo-image {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #00d4ff;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            color: #fff;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            margin-bottom: 2rem;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #00d4ff, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #00d4ff, #0099cc);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn-secondary:hover {
+            background: #fff;
+            color: #0a0a0a;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mouse {
+            width: 25px;
+            height: 40px;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .wheel {
+            width: 4px;
+            height: 8px;
+            background: #fff;
+            border-radius: 2px;
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scroll 2s infinite;
+        }
+
+        @keyframes scroll {
+            0% { top: 8px; opacity: 1; }
+            100% { top: 24px; opacity: 0; }
+        }
+
+        /* Sections */
+        .section-animate {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #fff;
+        }
+
+        /* About Section */
+        .about {
+            background: #111;
+            color: #fff;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .values {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .value-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+        }
+
+        .value-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Services Section */
+        .services {
+            background: #0a0a0a;
+            color: #fff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: #1a1a2e;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #00d4ff;
+        }
+
+        .additional-services {
+            margin-top: 3rem;
+        }
+
+        .additional-services h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #00d4ff;
+        }
+
+        .additional-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .additional-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #1a1a2e;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .additional-icon {
+            font-size: 2rem;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background: #111;
+            color: #fff;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .portfolio-item {
+            background: #1a1a2e;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-image {
+            height: 200px;
+            background: #0a0a0a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .placeholder-image {
+            font-size: 1.2rem;
+            color: #00d4ff;
+        }
+
+        .portfolio-content {
+            padding: 2rem;
+        }
+
+        .portfolio-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #00d4ff;
+        }
+
+        .portfolio-link {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .portfolio-status {
+            background: #ff6b6b;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .portfolio-cta {
+            text-align: center;
+            padding: 2rem;
+            background: #1a1a2e;
+            border-radius: 15px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #0a0a0a;
+            color: #fff;
+        }
+
+        .contact-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .email-button-container {
+            text-align: center;
+        }
+
+        .btn-email {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: #fff;
+            padding: 1.5rem 3rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-email:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Footer */
+        .footer {
+            background: #000;
+            color: #fff;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .social-icons {
+            margin: 1rem 0;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            opacity: 0.7;
+        }
+
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .logo-text {
+                font-size: 1.8rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .values {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="ISAAC CREATIVE STUDIO" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Főoldal</a></li>
+                <li><a href="#about">Rólam</a></li>
+                <li><a href="#services">Szolgáltatások</a></li>
+                <li><a href="#portfolio">Referenciák</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-animate visible">
+        <div class="hero-content">
+            <div class="logo-container">
+                <h1 class="logo-text">ISAAC CREATIVE STUDIO</h1>
+            </div>
+            <h2 class="hero-title">
+                Lendületes weboldalak, villámgyors kivitelezéssel.
+            </h2>
+            <p class="hero-subtitle">
+                Modern, látványos és profi weboldalak – akár 24 órán belül.
+                Neked, rólad, neked készítve.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Kérek Express Weboldalt (24 óra alatt)</a>
+                <a href="#portfolio" class="btn btn-secondary">Megnézem a Referenciákat</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-animate">
+        <div class="container">
+            <h2 class="section-title">
+                Egy fiatal fejlesztő, aki ért a lendülethez.
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Sziasztok! Izsák vagyok – fiatal, kreatív és
+                        megoldáscentrikus diák aki weblapkészítést vállal jó
+                        árakon.
+                    </p>
+                    <p>
+                        Olyan egyedi weboldalakat készítek, amelyek nemcsak
+                        jól néznek ki, hanem működnek is: gyorsan
+                        betöltenek, jól konvertálnak, és a Google is szereti
+                        őket.
+                    </p>
+                    <p>
+                        Hiszem, hogy egy jó weboldal nem sablonos. Ezért
+                        minden projektem személyre szabott:
+                    </p>
+                    <div class="values">
+                        <div class="value-item">
+                            <span class="value-icon">🎯</span>
+                            <span>célra törő</span>
                         </div>
-                        <p>
-                            Akár egy nap alatt is elkészülhet az új weboldalad.
-                            Beszéljünk róla!
-                        </p>
+                        <div class="value-item">
+                            <span class="value-icon">⚡️</span>
+                            <span>gyors</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">📈</span>
+                            <span>üzletileg eredményes</span>
+                        </div>
                     </div>
+                    <p>
+                        Akár egy nap alatt is elkészülhet az új weboldalad.
+                        Beszéljünk róla!
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services section-animate">
-            <div class="container">
-                <h2 class="section-title">Weboldal, ahogy te szeretnéd.</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">⚡</div>
-                        <h3>Express Weboldal (24 óra alatt)</h3>
-                        <p>
-                            Sürgős? Akkor pörögjünk fel! Látványos és működő
-                            profi weboldal akár 24 óra alatt.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🚀</div>
-                        <h3>Gyors Weboldal (3–5 munkanap)</h3>
-                        <p>
-                            Ha nem éget a határidő, de fontos a gyors
-                            megjelenés.
-                        </p>
-                        <small>Gyakori vállasztás.</small>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🎨</div>
-                        <h3>Normál Weboldal (kb. 7-10 nap)</h3>
-                        <p>Ez azoknak jó vállasztás akik ráérnek.</p>
-                    </div>
+    <!-- Services Section -->
+    <section id="services" class="services section-animate">
+        <div class="container">
+            <h2 class="section-title">Weboldal, ahogy te szeretnéd.</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Express Weboldal (24 óra alatt)</h3>
+                    <p>
+                        Sürgős? Akkor pörögjünk fel! Látványos és működő
+                        profi weboldal akár 24 óra alatt.
+                    </p>
                 </div>
-                <div class="additional-services">
-                    <h3>Plusz Szolgáltatások</h3>
-                    <div class="additional-grid">
-                        <div class="additional-item">
-                            <span class="additional-icon">🔍</span>
-                            <div>
-                                <strong>SEO-optimalizálás</strong>
-                                <p>hogy megtaláljanak a Google-ben</p>
-                            </div>
-                        </div>
-                        <div class="additional-item">
-                            <span class="additional-icon">✍️</span>
-                            <div>
-                                <strong>Szövegírás</strong>
-                                <p>
-                                    meggyőző, AI-keresésre is optimalizált
-                                    szövegek
-                                </p>
-                            </div>
-                        </div>
-                        <div class="additional-item">
-                            <span class="additional-icon">🎨</span>
-                            <div>
-                                <strong>Egyedi design</strong>
-                                <p>minden projekt saját megjelenést kap</p>
-                            </div>
-                        </div>
-                        <div class="additional-item">
-                            <span class="additional-icon">💬</span>
-                            <div>
-                                <strong>Konzultáció</strong>
-                                <p>
-                                    ötleteidre építünk, nem elbeszélünk
-                                    melletted
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Gyors Weboldal (3–5 munkanap)</h3>
+                    <p>
+                        Ha nem éget a határidő, de fontos a gyors
+                        megjelenés.
+                    </p>
+                    <small>Gyakori vállasztás.</small>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Normál Weboldal (kb. 7-10 nap)</h3>
+                    <p>Ez azoknak jó vállasztás akik ráérnek.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio section-animate">
-            <div class="container">
-                <h2 class="section-title">Néhány eddigi munkám</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image">
-                                📌 flathomeservices.hu
-                            </div>
+            <div class="additional-services">
+                <h3>Plusz Szolgáltatások</h3>
+                <div class="additional-grid">
+                    <div class="additional-item">
+                        <span class="additional-icon">🔍</span>
+                        <div>
+                            <strong>SEO-optimalizálás</strong>
+                            <p>hogy megtaláljanak a Google-ben</p>
                         </div>
-                        <div class="portfolio-content">
-                            <h3>flathomeservices.hu</h3>
+                    </div>
+                    <div class="additional-item">
+                        <span class="additional-icon">✍️</span>
+                        <div>
+                            <strong>Szövegírás</strong>
                             <p>
-                                Egy modern, szolgáltatás-orientált oldal
-                                társasházkezelés témában.
+                                meggyőző, AI-keresésre is optimalizált
+                                szövegek
                             </p>
-                            <a href="https://flathomeservices.hu/" target="_blank" class="portfolio-link">Élő oldal megtekintése →</a>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image">📌 xhronos.ai</div>
+                    <div class="additional-item">
+                        <span class="additional-icon">🎨</span>
+                        <div>
+                            <strong>Egyedi design</strong>
+                            <p>minden projekt saját megjelenést kap</p>
                         </div>
-                        <div class="portfolio-content">
-                            <h3>xhronos.ai</h3>
+                    </div>
+                    <div class="additional-item">
+                        <span class="additional-icon">💬</span>
+                        <div>
+                            <strong>Konzultáció</strong>
                             <p>
-                                Egy AI-projekt ami teljesen az ügyfél igényeire volt hangolva – letisztult, innovatív, reszponzív.
+                                ötleteidre építünk, nem elbeszélünk
+                                melletted
                             </p>
-                            <a href="https://xhronos.ai/" target="_blank" class="portfolio-link">Élő oldal megtekintése →</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <div class="placeholder-image">
-                                📌 Dandelion Vendégház
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>Dandelion Vendégház</h3>
-                            <p>
-                                Hangulatos bemutatkozó + időpontfoglaló oldal szállásadáshoz a balaton környékénél.
-                                Folyamatban!
-                            </p>
-                            <span class="portfolio-status">Készülőben</span>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-cta">
-                    <p>Nézd meg a részleteket vagy kérj saját oldalt most!</p>
-                    <a href="https://www.isaaccreative.hu/#contact" class="btn btn-primary">Kezdjük el!</a>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-animate">
-            <div class="container">
-                <h2 class="section-title">Lépjünk kapcsolatba!</h2>
-                <p class="contact-subtitle">
-                    Kérdésed van? Készen állsz egy új weboldalra? Írj bátran –
-                    válaszolok, és megbeszéljük a részleteket.
-                </p>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Név</label>
-                        <input type="text" id="name" name="name" required="">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section-animate">
+        <div class="container">
+            <h2 class="section-title">Néhány eddigi munkám</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">
+                            📌 flathomeservices.hu
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail cím</label>
-                        <input type="email" id="email" name="email" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Üzenet</label>
-                        <textarea id="message" name="message" rows="5" required=""></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        👉 Érdekel a közös munka!
-                    </button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="social-links">
+                    <div class="portfolio-content">
+                        <h3>flathomeservices.hu</h3>
                         <p>
-                            Minden weboldal mögött egy jó ötlet és egy még jobb megvalósítás áll. Ha ilyenre van szükséged, itt megtalálod.
+                            Egy modern, szolgáltatás-orientált oldal
+                            társasházkezelés témában.
                         </p>
-                        <div class="social-icons">
-                            <a href="https://www.isaaccreative.hu/#" class="social-icon">📷</a>
-                            <a href="https://www.isaaccreative.hu/#" class="social-icon">💻</a>
-                            <a href="https://www.isaaccreative.hu/#" class="social-icon">💼</a>
+                        <a href="https://flathomeservices.hu/" target="_blank" class="portfolio-link">Élő oldal megtekintése →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">📌 xhronos.ai</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>xhronos.ai</h3>
+                        <p>
+                            Egy AI-projekt ami teljesen az ügyfél igényeire volt hangolva – letisztult, innovatív, reszponzív.
+                        </p>
+                        <a href="https://xhronos.ai/" target="_blank" class="portfolio-link">Élő oldal megtekintése →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">
+                            📌 Dandelion Vendégház
                         </div>
                     </div>
-                    <div class="copyright">
+                    <div class="portfolio-content">
+                        <h3>Dandelion Vendégház</h3>
                         <p>
-                            © ISAAC CREATIVE STUDIO, 2025 – Minden jog
-                            fenntartva.
+                            Hangulatos bemutatkozó + időpontfoglaló oldal szállásadáshoz a balaton környékénél.
+                            Folyamatban!
                         </p>
+                        <span class="portfolio-status">Készülőben</span>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="portfolio-cta">
+                <p>Nézd meg a részleteket vagy kérj saját oldalt most!</p>
+                <a href="#contact" class="btn btn-primary">Kezdjük el!</a>
+            </div>
+        </div>
+    </section>
 
-        <script src="./ISAAC CREATIVE STUDIO - Lendületes modern weboldalak, villámgyors kivitelezéssel_files/script.js.letöltés"></script>
-    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-animate">
+        <div class="container">
+            <h2 class="section-title">Lépjünk kapcsolatba!</h2>
+            <p class="contact-subtitle">
+                Kérdésed van? Készen állsz egy új weboldalra? Írj bátran –
+                válaszolok, és megbeszéljük a részleteket.
+            </p>
+            <div class="email-button-container">
+                <a href="mailto:ilocsmandi@gmail.com?subject=Weboldal%20készítés%20érdeklődés&body=Szia%20Izsák!%0A%0AÉrdekel%20a%20weboldal%20készítés.%20Szeretnék%20beszélgetni%20róla.%0A%0AÜdvözlettel:" class="btn-email">
+                    📧 Írj nekem: ilocsmandi@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
 
-</body></html>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <p>
+                        Minden weboldal mögött egy jó ötlet és egy még jobb megvalósítás áll. Ha ilyenre van szükséged, itt megtalálod.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">💻</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        © ISAAC CREATIVE STUDIO, 2025 – Minden jog
+                        fenntartva.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Ripple effect for buttons
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+    </script>
+</body>
+</html>
